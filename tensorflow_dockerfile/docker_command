@@ -1,0 +1,2 @@
+docker run --rm -it --runtime=nvidia -p 8888:8888 --user $UID:$UID --volume="/etc/group:/etc/group:ro" --volume="/etc/passwd:/etc/passwd:ro" --volume="/etc/shadow:/etc/shadow:ro" --volume="/etc/sudoers.d:/etc/sudoers.d:ro" --volume="/home/$USER:/$USER" tensorflow_gpu_py3_ready $USER
+
